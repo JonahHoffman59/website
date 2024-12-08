@@ -1,3 +1,222 @@
 <html>
-    <h1>"This is a Test"</h1>
+    <head>
+        <meta charset="UTF-8">
+        
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <link rel="stylesheet" href="css/style.css"/>
+
+    </head>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Home')" id ="default">Home</button>
+        <button class="tablinks" onclick="openTab(event, 'Games')">Games</button>
+        <button class="tablinks" onclick="openTab(event, 'Other Projects')">Other Projects</button>
+        <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+        <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+    </div>
+    
+
+    <div id="Home" class="tabcontent">
+        <p>Thanks  for visiting my website! As you can see, things are still being worked on here. Check back soon for new features!</p>
+    </div>
+
+    <div id="Games" class="tabcontent">
+        <!-- setup accordion panels -->
+        <div class="accordionpanel">
+            <button class="accordion">Section 1</button>
+
+            <div class="panel">
+                <p></p>
+                <a href="https://github.com/JonahHoffman59/Simple-Calculator/archive/refs/heads/main.zip" download>
+                    <img src="" alt="Simple-Calculator.zip">
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="accordionpanel">
+            <button class="accordion">Section 2</button>
+    
+            <div class="panel">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="accordionpanel">
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+                <p></p>
+            </div>
+        </div>
+
+        <!-- add accordion panel functionality -->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
+
+    </div>
+
+        <!-- add accordion panel functionality -->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
+
+        
+    </div>
+
+    <div id="Other Projects" class="tabcontent">
+        <!-- setup accordion panels -->
+        <div class="accordionpanel">
+            <button class="accordion">Reduce, Reuse, Recycle</button>
+
+            <div class="panel">
+                <h4>About</h4>
+                <div class="panelcontent">
+                    <p>Did you know the world is running out of sand? Each year, over fifty billion tons of sand are used. Only certain types of glass are recycled, and due to recycling regulations not allowing broken glass, most glass gets sent to landfills because its composition is unknown. The goal of this project was to solve that problem. We developed a box with a laser through a glass block and a camera that calculates the composition of the block. Voted second for most innovative in Louisiana Tech engineering expo 2022.</p>
+                </div>
+                <h4>How it works:</h4>
+                <div class="panelcontent">
+                    <p>For this project, my team and I used an html page for the frontend and python for any calculations. The composition of the block is calculated using Snell's law. Based on the enter and exit angle of the laser through the block, we then used Snell's law to determine composition. The three types we used for this project were borosilicate, acrylic, and tempered glass.</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="accordionpanel">
+            <button class="accordion">Tech Shell</button>
+    
+            <div class="panel">
+                <h3>About</h3>
+                <div class="panelcontent">
+                    <p>Recreation of the UNIX terminal in C</p>
+                    <a href="https://github.com/JonahHoffman59/Tech-Shell/archive/refs/heads/main.zip" download>
+                        <img src="" alt="Tech Shell Download">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordionpanel">
+            <button class="accordion">Simple Calculator</button>
+            <div class="panel">
+                <h4>About</h4>
+                <div class="panelcontent">
+                    <p>A simple calculator built in Python using Tkinter.</p>
+                    <a href="https://github.com/JonahHoffman59/Simple-Calculator/archive/refs/heads/main.zip" download>
+                        <img src="" alt="Simple Calculator Download">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordionpanel">
+            <button class="accordion">Philosopher's Table</button>
+            <div class="panel">
+                <h4>About</h4>
+                <div class="panelcontent">
+                    <p>A C program that simulates the philosopher's table problem.</p>
+                    <a href="https://github.com/JonahHoffman59/Philosophers-Table/archive/refs/heads/main.zip" download>
+                        <img src="" alt="Philosopher's Table Download">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- add accordion panel functionality -->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
+
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <p>Thank for visiting the website once again, contact me at <em><a href="mailto:jonahhoffman122@gmail.com">jonahhoffman122@gmail.com</a></em></p>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <h1>About me</h1>
+        <p>Hi, my name is Jonah Hoffman and I am an undergraduate student in my third year studying Computer Science with a concentration in Computer Engineering.
+            This is my first website created entirely from scratch with the purpose of being a portfolio. Let me know if you find any issues with the site, and thanks for visiting!
+        </p>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+
+            var i, tabcontent, tablinks;
+
+            // hide tab content
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for(i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // show current tab
+            document.getElementById(tabName).style.display = "block";
+
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("default").click();
+
+
+    </script>
+
+
+
+
 </html>

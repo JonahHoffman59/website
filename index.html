@@ -1,0 +1,243 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <link rel="stylesheet" href="css/style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Home')" id ="default">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'Games')">Games</button>
+            <button class="tablinks" onclick="openTab(event, 'Other Projects')">Other Projects</button>
+            <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+            <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+        </div>
+        
+        
+
+            <div id="Home" class="tabcontent">
+                <div class="buffer">
+                    <p>Thanks  for visiting my website! As you can see, things are still being worked on here. Check back soon for new features!
+                    </p>
+                </div>
+            </div>
+
+            <div id="Games" class="tabcontent">
+                <div class="buffer">
+                    <!-- add accordion panel functionality -->
+                    <script>
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+
+                        for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function() {
+                            /* Toggle between adding and removing the "active" class,
+                            to highlight the button that controls the panel */
+                            this.classList.toggle("activeacc");
+
+                            /* Toggle between hiding and showing the active panel */
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                            } else {
+                            panel.style.display = "block";
+                            }
+                        });
+                        }
+                    </script>
+
+                    <!-- setup accordion panels -->
+                    <div class="accordionpanel">
+                        <button class="accordion" style="border-top-right-radius: 13px; border-top-left-radius: 13px;">Room Adventure(Java)</button>
+
+                        <div class="panel">
+                            <h4>About</h4>
+                            <div class="panelcontent">
+                                <p>Text-based game in which you are in a house tasked with the goal of escaping the house. Uses Java for programming.</p>
+                                <a href="https://github.com/JonahHoffman59/Room-Adventure-Java/archive/refs/heads/main.zip" download>
+                                    <img src="" alt="RoomAdventure.zip">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="accordionpanel">
+                        <button class="accordion"">Room Adventure(Python)</button>
+                
+                        <div class="panel">
+                            <h4>About</h4>
+                            <div class="panelcontent">
+                                <p>Text-based game in which you are in a house tasked with the goal of escaping the house. Uses Python for programming.</p>
+                                <a href="https://github.com/JonahHoffman59/Room-Adventure-Python/archive/refs/heads/main.zip" download>
+                                    <img src="" alt="RoomAdventure.zip">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordionpanel">
+                        <button class="accordion">Shoot the Spider</button>
+                        <div class="panel">
+                            <h4>About</h4>
+                            <div class="panelcontent">
+                                <p>Simple game in which you must shoot the spider. What high score can you get?</p>
+                                <a href="https://github.com/JonahHoffman59/Shoot-the-Spider/archive/refs/heads/main.zip" download>
+                                    <img src="" alt="ShootTheSpider.zip">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordionpanel">
+                        <button class="accordionFinal accordion" id="finalG" onclick="accFToggle('finalG')">Simon Says</button>
+                        <div class="panelf">
+                            <h4>About</h4>
+                            <div class="panelcontent">
+                                <p>Simon Says game using lights on a Raspberry Pi. Uses Python for programming.</p>
+                                <a href="https://github.com/JonahHoffman59/Simon-Says/archive/refs/heads/main.zip" download>
+                                    <img src="" alt="SimonSays.zip">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+
+            <div id="Other Projects" class="tabcontent">
+                <div class="buffer">
+                    <!-- setup accordion panels -->
+                    <div class="accordionpanel">
+                        <button class="accordion" style="border-top-right-radius: 13px; border-top-left-radius: 13px;">Reduce, Reuse, Recycle</button>
+
+                        <div class="panel">
+                            <h4>About</h4>
+                            <div class="panelcontent">
+                                <p>Did you know the world is running out of sand? Each year, over fifty billion tons of sand are used. Only certain types of glass are recycled, and due to recycling regulations not allowing broken glass, most glass gets sent to landfills because its composition is unknown. The goal of this project was to solve that problem. We developed a box with a laser through a glass block and a camera that calculates the composition of the block. Voted second for most innovative in Louisiana Tech engineering expo 2022.</p>
+                            </div>
+                            <h4>How it works:</h4>
+                            <div class="panelcontent">
+                                <p>For this project, my team and I used an html page for the frontend and python for any calculations. The composition of the block is calculated using Snell's law. Based on the enter and exit angle of the laser through the block, we then used Snell's law to determine composition. The three types we used for this project were borosilicate, acrylic, and tempered glass.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="accordionpanel">
+                        <button class="accordion">Tech Shell</button>
+                
+                        <div class="panel">
+                            <h3>About</h3>
+                            <div class="panelcontent">
+                                <p>Recreation of the UNIX terminal in C.</p>
+                                <a href="https://github.com/JonahHoffman59/Tech-Shell/archive/refs/heads/main.zip" download>
+                                    <img src="" alt="Tech Shell Download">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordionpanel">
+                        <button class="accordion">Simple Calculator</button>
+                        <div class="panel">
+                            <h4>About</h4>
+                            <div class="panelcontent">
+                                <p>A simple calculator built in Python using Tkinter.</p>
+                                <a href="https://github.com/JonahHoffman59/Simple-Calculator/archive/refs/heads/main.zip" download>
+                                    <img src="" alt="Simple Calculator Download">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordionpanel">
+                        <button  class="accordion accordionFinal" id="final" onclick="accFToggle('final')">Philosopher's Table</button>
+                        <div class="panelf">
+                            <h4>About</h4>
+                            <div class="panelcontent">
+                                <p>A C program that simulates the philosopher's table problem.</p>
+                                <a href="https://github.com/JonahHoffman59/Philosophers-Table/archive/refs/heads/main.zip" download>
+                                    <img src="" alt="Philosopher's Table Download">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- add accordion panel functionality -->
+                    <script>
+                        function accFToggle(id) {
+                            let gunga = document.getElementById(id);
+                            gunga.classList.toggle("accordionFinal")
+                        }
+                            var acc = document.getElementsByClassName("accordion");
+                            var i;
+
+                            for (i = 0; i < acc.length; i++) {
+                            acc[i].addEventListener("click", function() {
+
+                                /* Toggle between adding and removing the "active" class,
+                                to highlight the button that controls the panel */
+                                this.classList.toggle("activeacc");
+
+                                /* Toggle between hiding and showing the active panel */
+                                var panel = this.nextElementSibling;
+                                if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                                } else {
+                                panel.style.display = "block";
+                                }
+                            });
+                            }
+                    </script>
+                </div> 
+            </div>
+
+            <div id="Contact" class="tabcontent">
+                <div class="buffer">
+                    <p>Thank for visiting the website once again, contact me at <em><a href="mailto:jonahhoffman122@gmail.com">jonahhoffman122@gmail.com</a></em></p>
+            
+                </div>
+            </div>
+
+            <div id="About" class="tabcontent">
+                <div class="buffer">
+                    <h2>About me</h2>
+                    <p>Hi, my name is Jonah Hoffman and I am an undergraduate student in my third year studying Computer Science with a concentration in Computer Engineering.
+                        This is my first website created entirely from scratch with the purpose of being a portfolio. Let me know if you find any issues with the site, and thanks for visiting!
+                    </p>
+                </div>
+            </div>
+        
+        <script>
+            function openTab(evt, tabName) {
+
+                var i, tabcontent, tablinks;
+
+                // hide tab content
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for(i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // show current tab
+                document.getElementById(tabName).style.display = "block";
+
+                evt.currentTarget.className += " active";
+            }
+            document.getElementById("default").click();
+
+
+        </script>
+    </body>
+
+
+
+</html>

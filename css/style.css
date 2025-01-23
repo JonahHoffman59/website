@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    background-color: #7149ba;
   }  
 
 * {
@@ -16,7 +17,8 @@ html, body {
     border-bottom: none;
     justify-content: left;
     width: 100%-2px;
-
+    border-radius: 20px;
+    padding-left: 15px;
 
 }
   
@@ -48,7 +50,6 @@ html, body {
 .tabcontent {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #7149ba;
-    border-top: 1px solid black;
 
     overflow: auto;
     justify-items: center;
@@ -56,7 +57,7 @@ html, body {
     vertical-align: middle;
     height: 95.4%;
     width: 100%;
-    padding: 20px;
+    padding: 17px;
 }
 
 .projectcontent {
@@ -148,5 +149,17 @@ html, body {
     width: 100%;
     border-radius: 20px;
     padding: 20px;
+
+}
+.buffer2 {
+    border-color:black;
+    border: 1px black;
+    background-color: #a683e8;
+    overflow-y:auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
